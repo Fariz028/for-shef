@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf ve Mesaj</title>
+    <style>
+        /* Sayfa genel stil */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f06, #4e73df); /* Aynı renkli arka plan */
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Başlık */
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 50px;
+        }
+
+        /* Fotoğraf */
+        .photo {
+            width: 80%;
+            max-width: 500px;
+            margin: 30px auto;
+            border-radius: 10px;
+            /* Mobil uyumluluk için görsel boyutunu uyumlu hale getirdim */
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        /* Yazı Alanı (Beyaz barı kaldırdım) */
+        .content {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            /* Arka plan rengini kaldırdım */
+            color: #fff;  /* Yazının görünürlüğü için beyaz renk */
+        }
+
+        /* Mobil uyumlu düzenleme */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Mobilde başlık boyutunu küçültme */
+            }
+
+            .content {
+                font-size: 16px; /* Mobilde yazı boyutunu küçültme */
+                padding: 15px;   /* Mobilde içerik alanını küçültme */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fotoğraf -->
+    <h1>Dünyanın ən gözəl mənzərəsi</h1>
+    <img id="photo" class="photo" src="shef.jpg" alt="Sana Özel Fotoğraf">
+    
+    <!-- Yazı Alanı -->
+    <div class="content">
+        <p><strong>"Sadə bir mesajla qarşına çıxmaq istəmədim. Sadə olmayan bir insan üçün. Düzdü, sözlər kifayətsizdi həm səni həm hisslərimi ifadə etmək üçün amma əlimdən gəldiyi qədər bacarmağa çalışacam. Artıq 2 il ötür, bu 2 ildə sənin varlığın belə mənim özümü inkişaf etdirməyimə kömək elədi. Bəlkə sən olmasan həyatım daha da pis xətt üzərində yol alacaqdı. Amma yaxşı ki varsan. Bilmirəm, sən nə dərəcədə başa düşürsən məni amma mənə görə sənsiz mənim həyatım rəngsiz şəkilə oxşayır. Ümumiyyətlə, "nəfəsin olmayan yer məni boğar" cümləsini mənə ən dərininə kimi dərk etdirən birisən. Bu cür cümlələri qurduğumdan utanmadığım, çəkinmədiyim ilk qadınsan. Və tək olaraq qalacaqsan. Bu ali hissləri öyrətdiyin və həyatımda olduğun üçün sənə təşəkkür edirəm. Amma mən artıq həyatımda olmağını istəmirəm. Həyatım olmağını istəyirəm. Qoy, onlar yeni ilə girsin sən isə illərimə.."</strong></p>
+    </div>
+</body>
+</html>

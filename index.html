@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cennetin Kapısı</title>
+    <style>
+        /* Sayfa genel stil */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f06, #4e73df); /* renkli arka plan */
+            text-align: center;
+            color: white;
+        }
+
+        /* Başlık */
+        h1 {
+            font-size: 3rem;
+            margin-top: 100px;
+            animation: fadeIn 2s ease-in-out; /* Animasyon ekledim */
+        }
+
+        /* Animasyonlu Buton */
+        .button {
+            font-size: 20px;
+            padding: 15px 30px;
+            margin-top: 30px;
+            border: none;
+            background: #f0a500;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        /* Buton üzerine gelindiğinde animasyon */
+        .button:hover {
+            background: #ff6347;
+            transform: scale(1.1);
+        }
+
+        /* Animasyon efekti */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Başlık -->
+    <h1>For Shef</h1>
+
+    <!-- Animasyonlu Buton -->
+    <a href="yenisayfa.html">
+        <button class="button">Cennetin Kapısı</button>
+    </a>
+
+</body>
+</html>
